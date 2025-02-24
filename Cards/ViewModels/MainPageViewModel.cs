@@ -49,7 +49,6 @@ namespace Cards.ViewModels
             get => _dataService.SelectedCollection;
             set
             {
-               // selectedPath = value;
                 _dataService.SelectedCollection = value;
                 OnPropertyChanged();
                 LoadCards();

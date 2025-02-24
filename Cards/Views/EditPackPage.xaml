@@ -42,7 +42,7 @@
                         <TextBox VerticalAlignment="Center"
                                  Text="{Binding CardPackName, Mode=TwoWay}" />
 
-                        <Button Content="Создать пак"
+                        <Button Content="Create a set"
                                 Command="{Binding AddCardPackCommand}"
                                 Style="{StaticResource {x:Type Button}}" />
                         <!--<Button Content="🗘"
@@ -52,11 +52,12 @@
                     <StackPanel Orientation="Horizontal">
 
                         <TextBox VerticalAlignment="Center"
-                                 Text="{Binding CardPackName, Mode=TwoWay}" />
+                                 Text="{Binding CardPackName, Mode=TwoWay}" IsEnabled="False"/>
 
-                        <Button Content="Создать категорию"
+                        <Button Content="..."
                                 Command="{Binding AddCardPackCommand}"
-                                Style="{StaticResource {x:Type Button}}" />
+                                Style="{StaticResource {x:Type Button}}"
+                                IsEnabled="False" />
                     </StackPanel>
                 </StackPanel>
 
@@ -142,9 +143,9 @@
                                     </Grid.RowDefinitions>
 
                                     <TextBlock  Grid.Column="0"
-                                                Grid.Row="0">Переднаяя сторона</TextBlock>
+                                                Grid.Row="0">Front</TextBlock>
                                     <TextBlock  Grid.Column="1"
-                                                Grid.Row="0">Зданяя сторона</TextBlock>
+                                                Grid.Row="0">Back</TextBlock>
                                     <TextBox VerticalAlignment="Center"
                                              Text="{Binding MainText, Mode=TwoWay, UpdateSourceTrigger=Default}"
                                              Grid.Column="0"
@@ -153,7 +154,7 @@
                                              Text="{Binding SecondText, Mode=TwoWay, UpdateSourceTrigger=Default}"
                                              Grid.Column="1"
                                              Grid.Row="1" />
-                                    <Button Content="Удалить карточку"
+                                    <Button Content="Remove card"
                                             Grid.Column="2"
                                             Grid.Row="1"
                                             Command="{Binding DataContext.RemoveCardCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"

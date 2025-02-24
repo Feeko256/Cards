@@ -82,7 +82,6 @@ namespace Cards.ViewModels
             get => _dataService.SelectedCollection;
             set
             {
-               // selectedPath = value;
                 _dataService.SelectedCollection = value;
                 if (SelectedPath is not null)
                     RenamePack = SelectedPath.Name;

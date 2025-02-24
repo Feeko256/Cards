@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace Cards.Views
 {
-    /// <summary>
-    /// Логика взаимодействия для UserControl1.xaml
-    /// </summary>
     public partial class SettingsPage : UserControl
     {
         public SettingsPage()

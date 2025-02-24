@@ -21,7 +21,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <!-- Панель управления -->
+        <!-- Sets list -->
         <Border Grid.Column="0"
                 Grid.Row="1"
                 Margin="10"
@@ -55,7 +55,7 @@
         </Border>
 
 
-        <!-- Основная область с карточками -->
+        <!-- Cards list -->
         <Border Grid.Column="1"
                 Grid.Row="1"
                 CornerRadius="5"
@@ -106,28 +106,6 @@
                                         </TransformGroup>
                                     </GroupBox.RenderTransform>
                                     <TextBlock Text="{Binding CurrentText}"></TextBlock>
-                                    <!--
-                                    <Grid Background="Transparent">
-                                        <TextBlock Background="Transparent"
-                                                   Margin="10"
-                                                   Visibility="{Binding FrontFlip}"
-                                                   Text="{Binding MainText}"
-                                                   HorizontalAlignment="Center"
-                                                   VerticalAlignment="Center"
-                                                   TextWrapping="Wrap"
-                                                   FontSize="16"
-                                                   Foreground="White" />
-                                        <TextBlock Background="Transparent"
-                                                   Margin="10"
-                                                   Visibility="{Binding BackFlip}"
-                                                   Text="{Binding SecondText}"
-                                                   HorizontalAlignment="Center"
-                                                   VerticalAlignment="Center"
-                                                   TextWrapping="Wrap"
-                                                   FontSize="16"
-                                                   Foreground="White" />
-                                    </Grid>
-                                    -->
                                 </GroupBox>
                             </StackPanel>
                         </DataTemplate>
