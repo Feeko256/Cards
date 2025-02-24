@@ -23,7 +23,7 @@
 
         </Grid.ColumnDefinitions>
 
-        <!-- список паков -->
+        <!-- packs -->
         <Border Grid.Column="0"
                 Grid.Row="1"
                 Margin="10"
@@ -80,7 +80,7 @@
             </Grid>
         </Border>
 
-        <!-- настроки пака -->
+        <!-- pack settings -->
         <Border Grid.Column="0"
                 Grid.ColumnSpan="2"
                 Grid.Row="2"
@@ -112,7 +112,7 @@
             </Grid>
         </Border>
 
-        <!-- Основная область с карточками -->
+        <!-- cards -->
         <Border Grid.Column="1"
                 Grid.Row="1"
                 CornerRadius="5"
