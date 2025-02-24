@@ -57,6 +57,11 @@ namespace Cards.ViewModels
         private void LoadCardsPacks()
         {
             string folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Packs");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+                return;
+            }
             string[] jsonFiles = Directory.GetFiles(folderPath, "*.json", SearchOption.AllDirectories);
 
             foreach (var a in jsonFiles)
