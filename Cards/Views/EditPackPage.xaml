@@ -158,7 +158,6 @@
                                             Grid.Row="1"
                                             Command="{Binding DataContext.RemoveCardCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
                                             CommandParameter="{Binding}" />
-
                                 </Grid>
                             </Border>
                         </DataTemplate>
